@@ -1,42 +1,37 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select {
+  background-color: #f9f9f9;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 5px 0;
+  border: solid 1px #e6e6e6;
+}
+
+form button {
+  background-color: rgb(176, 176, 248);
+  margin: 10px 15px 0;
+}
+
+.error {
+  border: rgb(158, 60, 60) solid 1px;
+}
+
+.App form .errorMessage {
+  color: rgb(158, 60, 60);
+  font-size: 8px;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  width: 100%;
+  margin-top: -3px;
 }
